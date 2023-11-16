@@ -64,11 +64,6 @@
   
       /* now colors can be used with their regular names */
       background-color: @base;
-        
-      /* post modal: post button (this does not work) */
-      .css-175oi2r {
-         background-color: @accent-color !important;
-      }
   
       .r-jwli3a {
          color: @base;
@@ -185,15 +180,21 @@
       .r-1521r3q {
         color: @overlay1;
       }
-
+      
       /* mobile side drawer */
       [data-testid="drawer"] {
         background-color: @base;
       }
-
+      
       /* feedback */
       .r-m7buhn {
         background-color: @blue;
+      }
+      
+      /* save, report, post modal button */
+      [data-testid="saveBtn"], [data-testid="sendReportBtn"], [data-testid="composerPublishBtn"] > div {
+        background: unset !important;
+        background-color: @accent-color !important;
       }
   
       /*  If you need to specify an overwrite specific to a Flavor
