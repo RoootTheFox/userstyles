@@ -185,7 +185,8 @@
       /* save, report, post modal button */
       [data-testid="saveBtn"]>div,
       [data-testid="sendReportBtn"]>div,
-      [data-testid="composerPublishBtn"]>div {
+      [data-testid="composerPublishBtn"]>div,
+      [data-testid="editProfileSaveBtn"]>div {
         background: unset !important;
         background-color: @accent-color !important;
       }
