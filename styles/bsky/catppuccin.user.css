@@ -65,10 +65,6 @@
       /* now colors can be used with their regular names */
       background-color: @base;
   
-      .r-jwli3a {
-         color: @base;
-      }
-  
       /* main page, post button (bottom right) */
       .r-1awozwy.r-1777fci.r-1xomwt0 {
          background: unset !important;
@@ -131,11 +127,6 @@
         stroke: @accent-color !important;
       }
   
-      /* idk */
-      div[style*="border-bottom-color: rgb(0, 133, 255)"] {
-        border-bottom-color: @accent-color !important;
-      }
-  
       /* wide site: new post button (w text) */
       .r-wzwllv {
         background-color: @accent-color !important;
@@ -192,9 +183,15 @@
       }
       
       /* save, report, post modal button */
-      [data-testid="saveBtn"], [data-testid="sendReportBtn"], [data-testid="composerPublishBtn"] > div {
+      [data-testid="saveBtn"]>div,
+      [data-testid="sendReportBtn"]>div,
+      [data-testid="composerPublishBtn"]>div {
         background: unset !important;
         background-color: @accent-color !important;
+      }
+  
+      .r-jwli3a {
+         color: @base !important;
       }
   
       /*  If you need to specify an overwrite specific to a Flavor
